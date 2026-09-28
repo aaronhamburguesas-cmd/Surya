@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surya Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">Surya</div>
+        <nav class="menu">
+          <a href="#">Inicio</a>
+          <a href="#">Catálogo</a>
+          <a href="#">Ofertas</a>
+          <a href="#">Contacto</a>
+        </nav>
+        <button class="cart-btn">Carrito (0)</button>
+      </div>
+    </header>
+
+    <main class="container page">
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">Nueva colección</span>
+          <h1>Descubre productos que transforman tu vida diaria.</h1>
+          <p>
+            Una tienda online moderna con catálogo visual, precios claros y una
+            experiencia simple para comprar desde cualquier dispositivo.
+          </p>
+          <div class="hero-actions">
+            <a href="#catalog" class="primary-btn">Ver catálogo</a>
+            <a href="#" class="secondary-btn">Explorar ofertas</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card card-one">
+            <span>Envío gratis</span>
+            <strong>En pedidos +$59</strong>
+          </div>
+          <div class="floating-card card-two">
+            <span>Productos</span>
+            <strong>+120 disponibles</strong>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalog" class="catalog-section">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Catálogo</span>
+            <h2>Productos destacados</h2>
+          </div>
+          <select id="categoryFilter" class="filter-select">
+            <option value="all">Todas las categorías</option>
+            <option value="Tecnología">Tecnología</option>
+            <option value="Hogar">Hogar</option>
+            <option value="Belleza">Belleza</option>
+            <option value="Ropa">Ropa</option>
+          </select>
+        </div>
+
+        <div id="productsGrid" class="products-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
