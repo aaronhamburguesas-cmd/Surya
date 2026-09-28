@@ -14,14 +14,40 @@
       <div class="container nav">
         <div class="brand">Surya</div>
         <nav class="menu">
-          <a href="#">Inicio</a>
-          <a href="#">Catálogo</a>
-          <a href="#">Ofertas</a>
-          <a href="#">Contacto</a>
+          <a href="#catalog">Catálogo</a>
+          <a href="#ofertas">Ofertas</a>
+          <a href="#contacto">Contacto</a>
         </nav>
-        <button class="cart-btn">Carrito (0)</button>
+        <button class="cart-btn" id="cartBtn">🛒 Carrito (<span id="cartCount">0</span>)</button>
       </div>
     </header>
+
+    <!-- Modal del Carrito -->
+    <div id="cartModal" class="cart-modal hidden">
+      <div class="cart-modal-content">
+        <div class="cart-header">
+          <h2>Tu Carrito</h2>
+          <button class="close-btn" id="closeCart">&times;</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Subtotal:</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Impuesto (10%):</span>
+            <span id="tax">$0.00</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total:</span>
+            <span id="total">$0.00</span>
+          </div>
+          <button class="checkout-btn" id="checkoutBtn">Proceder al Pago</button>
+          <button class="clear-cart-btn" id="clearCartBtn">Vaciar Carrito</button>
+        </div>
+      </div>
+    </div>
 
     <main class="container page">
       <section class="hero">
